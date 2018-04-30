@@ -1,0 +1,30 @@
+{
+  "name": "parcel-react-app",
+  "version": "1.0.0",
+  "description": "React App with Parcel",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kocisov/parcel-react-app.git"
+  },
+  "keywords": ["Parcel", "React", "App", "JavaScript", "SCSS"],
+  "author": "kocisov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kocisov/parcel-react-app/issues"
+  },
+  "homepage": "https://github.com/kocisov/parcel-react-app#readme",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-react-app": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
