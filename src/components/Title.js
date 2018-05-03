@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-export default class Title extends Component {
+export default class Title extends PureComponent {
   static propTypes = {
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
@@ -10,6 +11,13 @@ export default class Title extends Component {
   }
 
   render() {
-    return <h2 className="title">{this.props.children}</h2>
+    const { children, ...props } = this.props
+    const className = classNames('title', {})
+
+    return (
+      <h2 className={className} {...props}>
+        {children}
+      </h2>
+    )
   }
 }

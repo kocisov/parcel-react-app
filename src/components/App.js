@@ -1,15 +1,11 @@
-import React, { Component, Fragment } from 'react'
+import React, { PureComponent, Fragment } from 'react'
 import Title from './Title'
 
-export default class App extends Component {
-  static defaultProps = {
-    cool: true,
-  }
-
+export default class App extends PureComponent {
   render() {
     return (
       <Fragment>
-        <Title>Lol</Title>
+        <Title>Welcome</Title>
       </Fragment>
     )
   }
