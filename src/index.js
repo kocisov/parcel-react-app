@@ -1,7 +1,12 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { render as reactRender } from 'react-dom'
+import { injectGlobal } from 'styled-components'
+import { normalize } from 'polished'
 import App from './components/App'
-import './styles/application'
+
+injectGlobal`
+  ${normalize()};
+`
 
 const node = document.getElementById('root')
-render(<App />, node)
+reactRender(<App />, node)
